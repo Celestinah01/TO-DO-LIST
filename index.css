@@ -4,12 +4,20 @@
     font-family: 'poppins', 'sans-serif';
     box-sizing: border-box;
 }
-.container {
+html , body{
     width: 100%;
+    overflow-x: hidden;
+
+}
+.container {
+    max-height: 600px;
+    width: 100%;
+    margin: auto;
     min-height: 100vh;
     background: linear-gradient(135deg, #5D3FD3, #ECE);
     padding: 10px;
 }
+
 .todo-app {
     width: 100%;
     max-width: 540px;
@@ -105,4 +113,13 @@ ul li span {
 
 ul li span:hover {
     background: #edeef0;
+}
+
+@media (max-width:480px) {
+
+   .container, .todo-app {
+    width: 100%;
+    padding: 20px;
+   }
+   
 }
